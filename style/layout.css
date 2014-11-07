@@ -1,0 +1,515 @@
+@font-face {
+  font-family: 'CBSNEW';
+  src: url('CBSNEW.eot?#iefix') format('embedded-opentype'),  url('CBSNEW.woff') format('woff'), url('CBSNEW.ttf')  format('truetype'), url('CBSNEW.svg#CBSNEW') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "cbsb";
+    src: url("../cbs_new_bold-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "cbsb";
+    src: url("../cbs_new_bold-webfont.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "cbsb";
+    src: url("../cbs_new_bold-webfont.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "cbsb";
+    src: url("../cbs_new_bold-webfont.woff") format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "cbsn";
+    src: url("../cbs_new_regular-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "cbsn";
+    src: url("../cbs_new_regular-webfont.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "cbsn";
+    src: url("../cbs_new_regular-webfont.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "cbsn";
+    src: url("../cbs_new_regular-webfont.woff") format('woff');
+    font-style: italic;
+}
+/*-----------------------------------------------------------------
+Layout StyleSheet
+
+Version:	2.0
+Author: 	Rasmus Schau-Seidler
+Email: 		rs@gormlarsenzornig.com
+website:	www.gormlarsenzornig.com
+-----------------------------------------------------------------*/
+/*-------------------------------------
+Basic helper classes
+---------------------------------------*/
+.floatleft {
+	float:left;
+}
+
+.floatright {
+	float:right;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+img,object,embed {
+	height:auto;
+	width:auto;
+	max-width:100%;
+}
+
+img {
+	-ms-interpolation-mode:bicubic;
+}
+
+a:focus {
+	outline:none;
+}
+
+/*-------------------------------------
+Basic layout
+---------------------------------------*/
+body {
+	background:#60BCDA;
+	font-family:'cbsn';
+	src:url(CBSNEW.eot?#iefix) format(embedded-opentype),url(CBSNEW.woff) format(woff),url(CBSNEW.ttf) format(truetype),url(CBSNEW.svg#CBSNEW) format(svg);
+	font-weight:400;
+	font-style:normal;
+	background:url(../lines.png) #60BCDA;
+	background-repeat:no-repeat;
+	background-size:85%;
+}
+
+.kvitbg{
+		background-size:115%;
+}
+
+.page-container {
+	display:block;
+	text-align:center;
+}
+
+.page-header {
+	width:100%;
+}
+
+.page-content-container {
+	width:100%;
+}
+*{
+		-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.page-container div {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.page-footer {
+	width:100%;
+}
+
+.section {
+	display:inline-block;
+	max-width:980px;
+	width:100%;
+	padding:0;
+	margin:0 auto;
+	text-align:left;
+	margin-bottom: 0!important;
+}
+
+/*-------------------------------------
+Navigation
+---------------------------------------*/
+.nav-toggle {
+	display:none;
+}
+
+.page-navigation {
+}
+
+.page-navigation ul {
+	padding:0;
+	margin:0;
+}
+
+.page-navigation li {
+	display:inline-block;
+	list-style:none inside;
+	margin:0;
+}
+
+.page-navigation a {
+	display:block;
+	padding:10px 15px;
+}
+
+.selected a {
+	color:#F98323;
+}
+
+/*-------------------------------------
+HEADER
+---------------------------------------*/
+/*-------------------------------------
+FOOTER
+---------------------------------------*/
+/*-------------------------------------
+SIMPLE! GRID - a little help - Modify if needed
+---------------------------------------*/
+.grid-1-1,.grid-1-2,.grid-1-3,.grid-2-3,.grid-1-4,.grid-3-4,.grid-1-5,.grid-2-5,.grid-3-5,.grid-4-5,.grid-5-6,.grid-1-6 {
+	float:left;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.row {
+	width:auto;
+	display:block;
+}
+
+.row:before,.row:after {
+	content:" ";
+	display:table;
+}
+
+.row .row {
+	margin-left:-15px;
+	margin-right:0;
+}
+
+.row .row > div {
+	padding-right:0;
+}
+
+.row:after {
+	clear:both;
+}
+
+.grid-1-1 {
+	width:100%;
+}
+
+.grid-1-2 {
+	width:50%;
+}
+
+.grid-1-3 {
+	width:33.3333%;
+}
+
+.grid-2-3 {
+	width:66.6666%;
+}
+
+.grid-1-4 {
+	width:25%;
+}
+
+.grid-3-4 {
+	width:75%;
+}
+
+.grid-1-5 {
+	width:20%;
+}
+
+.grid-2-5 {
+	width:40%;
+}
+
+.grid-3-5 {
+	width:60%;
+}
+
+.grid-4-5 {
+	width:80%;
+}
+
+.grid-1-6 {
+	width:16.666666666667%;
+}
+
+.grid-5-6 {
+	width:83.333333333333%;
+}
+
+/*-------------------------------------
+PAGE
+---------------------------------------*/
+.content {
+	color:#E4E4E6;
+	letter-spacing:.5px;
+	font-weight:100;
+	line-height:1.55556;
+	-webkit-font-smoothing:antialiased;
+	font-weight:400;
+}
+
+.content .section {
+	max-width:500px;
+	margin:10px 0;
+}
+
+.content .section input {
+	border-radius:0;
+	background:transparent;
+	border:1px solid #DBDBDB;
+	color:#5A5B5A;
+	-webkit-appearance: none;
+	box-shadow: none;
+	height: 42px;
+	padding: 0px 20px;
+}
+
+.content .section input:focus {
+	border:1px solid #333;
+	background:rgba(0,0,0,0.12);
+	color:#5A5B5A;
+	-webkit-appearance: none;
+}
+
+.content .section label {
+	font-weight:600;
+	color:#5A5B5A;
+	text-align:left;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+.content .section button {
+	display:inline-block;
+	min-height:30px;
+	padding:10px 14px;
+	border:none;
+	background:rgba(0,0,0,0.02);
+	line-height:30px;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#444;
+	letter-spacing:normal;
+	cursor:pointer;
+	-webkit-appearance:button;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#F4F8FF;
+	border:1px solid #DBDBDB;
+	border-radius:0;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	width:auto;
+	transition:all .6s;
+	padding:10px 21px;
+	float:right;
+	font-size:27px;
+}
+
+.content .section button:hover {
+	background:rgba(0,0,0,0.33);
+	border:1px solid #7692BD;
+	transition:all .6s;
+}
+
+.page-header {
+	background:#60BCDA;
+	padding:20px;
+	border-bottom:2px solid #628CEB;
+}
+
+.page-footer {
+	background:#353A49;
+	padding:20px;
+	border-top:1px solid #5699FF;
+	position:fixed;
+	bottom:0;
+}
+
+.page-header a {
+	color:#4967AA;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:.5px;
+}
+
+.names {
+	width:50%;
+	float:left;
+	-webkit-box-sizing:border-box;
+/* Safari/Chrome, other WebKit */
+	-moz-box-sizing:border-box;
+/* Firefox, other Gecko */
+	box-sizing:border-box;
+/* Opera/IE 8+ */
+}
+
+.fornavn {
+	padding-right:10px;
+	width:50%!important;
+}
+
+.efternavn {
+	padding-left:10px;
+	width:50%!important;
+}
+
+.date {
+	width:100%;
+	float:left;
+}
+
+.date label {
+	padding-left:0!important;
+}
+
+.date select {
+	width:100px;
+}
+
+.logo {
+	display:block;
+	margin:auto;
+	width:55%;
+}
+
+.knap {
+	float:left;
+	width:100%;
+	margin-bottom:0;
+}
+
+.text img {
+	width:50%;
+	width: 130px;
+	display: block;
+	float: right;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.text p {
+	float:left;
+	width:100%;
+}
+
+form {
+	max-width:500px;
+	float: left;
+	border: solid 1px #DBDBDB;
+	padding: 20px;
+}
+
+.text h1 {
+	color:#fff;
+	text-align:left;
+	text-transform:uppercase;
+	padding:10px 0 11px;
+	margin:auto;
+	max-width:600px;
+	font-size:40px;
+	margin-bottom:20px;
+	text-align:left;
+	font-weight:600;
+}
+
+.text h2 {
+max-width: 500px;
+margin: auto;
+font-weight: 700;
+text-align: center;
+border: solid 1px #DBDBDB;
+padding: 20px;
+color: white;
+
+}
+
+.bread {
+color: #fff;
+max-width: 500px;
+margin: auto;
+font-size: 23px;
+line-height: 35px;
+border: solid 1px #DBDBDB;
+padding: 20px;
+border-bottom: 0;
+border-top: 0;
+}
+
+.mail-warning {
+	margin:-11px 0;
+	color:rgba(0,0,0,0.49);
+	font-size:14px;
+	font-weight:500;
+}
+
+.kvit img {
+	width:30%;
+}
+
+.kvit h1 {
+	line-height:60px;
+	font-size: 60px;
+}
+
+.kvit h2 {
+	line-height:40px;
+	margin-bottom:5px;
+	float: left;
+}
+
+.kvit a {
+	color:#5A5B5A;
+}
+
+hr {
+	max-width:100px;
+	border-color:#70D0FD;
+	margin:auto;
+}
+
+.top {
+	margin:auto;
+}
+
+.top1 {
+width: auto;
+min-width: 100px;
+float: left;
+}
+
+.top2 {
+	width:60%;
+}
+
+.page-container br {
+display: none;
+}

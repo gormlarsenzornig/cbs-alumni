@@ -1,0 +1,186 @@
+/*-----------------------------------------------------------------
+Basic StyleSheet
+
+Version:	2.0
+Author: 	Rasmus Schau-Seidler
+Email: 		rs@gormlarsenzornig.com
+website:	www.gormlarsenzornig.com
+
+This stylesheet contains styles that represent typographic- and other
+"basic" styles that does not affect layout. The Basic stylesheet is
+used to style basic content.
+
+-----------------------------------------------------------------*/
+
+/*-------------------------------------
+Basic typography of the web application
+---------------------------------------*/
+body, html {
+
+}
+body, html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #555;
+	font-weight: 300;
+	font-size: 16px;
+	margin: 0;
+}
+h1 {
+	font-size: 50px;
+	line-height: 55px;
+	font-weight: 300;
+	margin: 0 0 15px 0;
+}
+h2 {
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+	margin: 0 0 15px 0;
+}
+h3 {
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 300;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+}
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+h5 {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+h6 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin: 5px 0;
+}
+
+/*---------------------------------------
+STANDARD LINKS
+---------------------------------------*/
+a:link, a:visited, a:active {
+	color: #1D8ACB;
+	text-decoration: none;
+}
+a:hover {
+	color: #0b5f90;
+	text-decoration: underline;
+}
+
+/*---------------------------------------
+LISTS and NESTED LISTS
+---------------------------------------*/
+ul, ol {
+	margin: 0 0 15px 0;
+	padding: 0 0 0 30px;
+}
+ul li,
+ol li {
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+ul li {
+	list-style: disc outside;
+}
+ul li > ul li {
+	list-style: circle;
+}
+ul li > ul li > ul li {
+	list-style: square;
+}
+
+ol li {
+	list-style: decimal;
+}
+ol li > ol li {
+	list-style: lower-latin;
+}
+ul > li > ul,
+ul > li > ol,
+ol > li > ol,
+ol > li > ul {
+	margin: 0;
+}
+/*---------------------------------------
+TABLE
+---------------------------------------*/
+table {
+	margin: 0 0 15px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+table td, table th {
+	padding: 5px 10px;
+	border-bottom: 1px solid #E5E5E5;
+}
+table th {
+	text-align: left;
+	padding: 10px;
+}
+tr:hover td {
+	background: #f5f5f5;
+}
+
+/*---------------------------------------
+FONT- and OTHER tag styles
+---------------------------------------*/
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	display: block;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #dddddd;
+	margin: 20px 0;
+}
+small {
+	font-size: 80%;
+	font-weight: normal;
+}
+em {
+	font-style: italic;
+	color: #DD0055;
+}
+code, .code {
+	background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+	color: #DD0055;
+	font-size: 12px;
+	padding: 1px 5px;
+	white-space: nowrap;
+}
+ins, mark {
+	background: none repeat scroll 0 0 #FFFFAA;
+	color: #666666;
+	text-decoration: none;
+}
+abbr[title], dfn[title] {
+	cursor: help;
+	border-bottom: 1px dotted;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+pre {
+	margin: 0;
+}
